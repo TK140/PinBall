@@ -6,25 +6,21 @@ using UnityEngine.UI;
 public class PointCount : MonoBehaviour
    {
     // 項目の宣言
-     private int total;
-     private int scorelargestar;
-     private int scoresmallstar;
-     private int scorelargecloud;
-     private int scoresmallcloud;
+    // 合計値のクリア
+     private int total = 0;
+    // 大きい星のスコアの設定
+     private int scorelargestar = 100;
+    // 小さい星のスコアの設定
+     private int scoresmallstar = 10;
+    // 小さい雲のスコアの設定
+     private int scorelargecloud = 500;
+    // 小さい雲のスコアの設定
+     private int scoresmallcloud = 200;
      private GameObject GamePointText;
 
     // Use this for initialization
     void Start () {
-        // 合計値のクリア
-         total = 0;
-        // 大きい星のスコアの設定
-         scorelargestar = 100;
-        // 小さい星のスコアの設定
-         scoresmallstar = 10;
-        // 大きい雲のスコアの設定
-         scorelargecloud = 500;
-        // 小さい雲のスコアの設定
-         scoresmallcloud = 200;
+        
         // スコアテキストのオブジェクトの取得
         this.GamePointText = GameObject.Find("GamePointText");
     }
